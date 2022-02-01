@@ -1,0 +1,184 @@
+/* animation */
+@keyframes rolling {
+    0% {
+        transform: translatey(0);
+        }
+    25% {
+        transform: translatey(-20%);
+    }
+    50% {
+        transform: translatey(-40%);
+    }
+    75% {
+        transform: translatey(-60%);
+    }
+    100% {
+        transform: translatey(-80%);
+        }
+}
+
+
+
+@font-face {
+    font-family: "karbon-test";
+    src: url("./assets/karbon-test-bold.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "karbon-test";
+    src: url("./assets/karbon-test-bold-italic.woff") format("woff");
+  }
+
+
+@font-face {
+    font-family: "karbon-test";
+    src: url("./assets/karbon-test-regular.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "karbon-test";
+    src: url("./assets/karbon-test-regular-italic.woff") format("woff");
+  }
+
+.content {
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.jonghee {
+    position: relative;
+    padding: 20px;
+    width: 40%;
+    height: 20;
+    right: 0;
+    left: 50%;
+}
+
+.profile-section {
+    margin-right: 100px;
+  }
+  
+.portrait {
+  max-width: 100%;
+}
+
+.profile {
+  padding: 3.125em;
+}
+
+.profile-header.portrait,
+.profile-section {
+  padding-bottom: 3.125em;
+}
+
+
+.name {
+  font-size: 1.875em;
+  line-height: 1.5;
+  font-style: italic;
+  position: sticky;
+  top: -1.8em;
+  background-color: lightpink;
+  box-shadow: 0 0 50px 10px pink;
+  padding: 1em;
+
+}
+
+.name-job {
+  font-size: 30px;
+  display: inline-block;
+  color: white;
+  vertical-align: top;
+  height: 1.5em;
+  overflow: hidden;
+  padding-right: 1em;
+  position: relative;
+}
+
+.name-job::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0%;
+    right: 0;
+    bottom: 0;
+    margin-left: -1em;
+}
+
+.name-job-list {
+font-size: 30px;
+animation-name: rolling;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-direction: reverse;
+}
+
+.name-title {
+  font-size: 1.3em;
+  line-height: 1em;
+  color: deeppink;
+  margin-left: -0.3em;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.text {
+    position: absolute;
+    top: 25%;
+    max-width: 31.25em;
+    padding: 1.875em;
+  }
+
+.icons {
+    position: relative;
+    bottom: 152px;
+    margin: 1.875em 0px;
+    padding: 1em;
+}
+
+.icons a {
+    background-image: url(assets/icons.png);
+    width: 1.875em;
+    height: 1.875em;
+    display: inline-block;
+    text-indent: -9999px;
+}
+
+.icons a.twitter   { background-position: left top; }
+.icons a.facebook  { background-position: center top; }
+.icons a.pinterest { background-position: right top; }
+
+.icons a:hover { background-position-y: bottom; }
+
+.profile-section h2 {
+  border-top: 3px solid;
+  color: pink;
+  margin-bottom: 20px;
+  padding: 0.5em 0;
+  position: sticky;
+  position: relative;
+  z-index: 1;
+}
+
+.profile-section {
+    position: relative;
+    bottom: 230px;
+    padding: 1.875em;
+}
+
+.list {
+    position: relative;
+    bottom: 23px;
+    color: #666;
+}
+
+.list dt {
+    color: deeppink;
+    float: left;
+    width: 4em;
+}
+
+.list dd {
+    overflow: hidden;
+}

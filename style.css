@@ -46,13 +46,42 @@
     flex-direction: column;
 }
 
-.jonghee {
+.img1 {
     position: relative;
     padding: 20px;
-    width: 40%;
+    width: 20%;
     height: 20;
     right: 0;
-    left: 50%;
+    left: 0%;
+}
+
+.img2 {
+  position: absolute;
+  padding: 20px;
+  width: 50%;
+  height: 20;
+  top: 25%;
+  right: 0%;
+  left: 40%;
+}
+
+.img3 {
+  position: relative;
+  padding: 20px;
+  width: 20%;
+  height: 20;
+  right: 0;
+  left: 0%;
+}
+
+.img4 {
+  position: absolute;
+  padding: 20px;
+  width: 20%;
+  height: 20;
+  top: 75%;
+  right: 0;
+  left: 40%;
 }
 
 .profile-section {
@@ -125,14 +154,41 @@ animation-direction: reverse;
 
 .text {
     position: absolute;
-    top: 25%;
+    top: 3.5%;
+    left: 35%;
     max-width: 31.25em;
     padding: 1.875em;
+    font-size: 20px;
+    color:white;
   }
+
+  .text20 {
+    position: absolute;
+    top: 82%;
+    left: 20%;
+    padding: 20px;
+    color:lightpink;
+  }
+
+.text01 {
+  position: absolute;
+  top: 68%;
+  right: 10%;
+  padding: 20px;
+  color:lightpink;
+}
+
+.text03 {
+  position: absolute;
+  top: 120%;
+  left: 20%;
+  padding: 20px;
+  color:lightpink;
+}
 
 .icons {
     position: relative;
-    bottom: 152px;
+    bottom: 250px;
     margin: 1.875em 0px;
     padding: 1em;
 }
@@ -163,7 +219,7 @@ animation-direction: reverse;
 
 .profile-section {
     position: relative;
-    bottom: 230px;
+    bottom: 110px;
     padding: 1.875em;
 }
 
@@ -181,4 +237,17 @@ animation-direction: reverse;
 
 .list dd {
     overflow: hidden;
+}
+
+.nav {
+  font-size: 15px;
+  position: absolute;
+  left: 80%;
+}
+
+.nav2{
+  font-size: 15px;
+  position: absolute;
+  left: 80%;
+  bottom: 40%;
 }
